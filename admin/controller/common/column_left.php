@@ -216,7 +216,7 @@ class ControllerCommonColumnLeft extends Controller {
 				);
 			}
 
-			if ($this->user->hasPermission('access', 'design/test')) {
+			if ($this->user->hasPermission('access', 'design/banner')) {
 				$design[] = array(
 					'name'	   => 'Test',
 					'href'     => $this->url->link('design/test', 'user_token=' . $this->session->data['user_token'], true),

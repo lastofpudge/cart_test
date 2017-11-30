@@ -51,11 +51,13 @@ class ControllerDesignTest extends Controller {
 	}
 
 	public function add() {
-	    die('add');
+		$this->load->model('design/test');
+	    $this->model_design_test->addTest();
 	}
 
 	public function delete() {
-	    die('delete');
+		$this->load->model('design/test');
+	    $this->model_design_test->deleteTest();
 	}
 
 }

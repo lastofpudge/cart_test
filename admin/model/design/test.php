@@ -1,14 +1,16 @@
 <?php
+class ModelDesignTest extends Model {
 
-class ModelTest extends Model {
+    public function addTest() {
+        die('add');
+    }
 
-	public function addTest($data) {
-	}
+    public function editTest() {
+        die('edit');
+    }
 
-	public function editTest($test_id, $data) {
-	}
-
-	public function deleteTest($test_id) {
-	}
+    public function deleteTest() {
+        die('delete');
+    }
 
 }
